@@ -254,21 +254,26 @@ footer {
   background-color: #2d6a4f;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
+  font-size: 16px; /* Adjust this for overall text size */
+}
+
+footer p {
+  margin: 10px 0;
 }
 
 .social-icons {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .social-icons a {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 8px;
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;  /* Adjust icon size here */
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
