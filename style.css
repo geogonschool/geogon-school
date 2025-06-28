@@ -35,6 +35,9 @@ header {
   display: flex;
   align-items: center;
 }
+.header-left .school-name {
+  color: white !important;
+}
 
 .logo {
   width: 70px;
