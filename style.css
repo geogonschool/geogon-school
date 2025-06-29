@@ -14,7 +14,6 @@ header {
   z-index: 1000;
   background: linear-gradient(135deg, #2d6a4f, #40916c);
   color: white;
-  text-align: center;
   padding: 30px 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -69,6 +68,25 @@ nav a:hover {
 nav a.active {
   background-color: #ffeb3b;
   color: #2d6a4f;
+}
+
+/* 🍔 Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto; /* push to right */
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 28px;
+  background: white; /* white for visibility */
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.4s;
 }
 
 /* 🍃 Hero Section (white background) */
@@ -280,26 +298,16 @@ img {
   height: auto;
 }
 
-/* 🍔 Hamburger Menu */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
 /* 💻 Responsive Styles */
 @media (max-width: 768px) {
   .header-bar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto; /* right side */
   }
 
   nav {
@@ -310,10 +318,6 @@ img {
   }
 
   nav.show {
-    display: flex;
-  }
-
-  .menu-toggle {
     display: flex;
   }
 
