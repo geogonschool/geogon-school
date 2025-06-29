@@ -132,9 +132,9 @@ footer p {
 .package-card {
   background: #f0f4f8;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .feature-card:hover,
@@ -144,6 +144,41 @@ footer p {
 .package-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #b2f7ef, #f0f4f8);
+}
+
+/* 🌟 Special styling for topics page cards */
+.topic-card {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border: 2px solid #2d6a4f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.topic-card h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.topic-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topic-card ul li {
+  margin: 6px 0;
+}
+
+.topic-card ul li a {
+  text-decoration: none;
+  color: #40916c;
+  font-weight: 600;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.topic-card ul li a:hover {
+  color: #ffb703;
+  text-decoration: underline;
 }
 
 .btn-primary,
@@ -210,7 +245,6 @@ footer p {
   background-color: #023e8a;
 }
 
-/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .header-bar {
     flex-direction: row;
@@ -252,7 +286,6 @@ footer p {
   }
 }
 
-/* Phones (≤ 480px) */
 @media (max-width: 480px) {
   .header-left {
     flex-direction: column;
