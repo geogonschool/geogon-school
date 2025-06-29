@@ -344,6 +344,24 @@ img {
   h3 {
     font-size: 1.3rem;
   }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .school-name {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -353,7 +371,7 @@ img {
   }
 
   .school-name {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h1 {
@@ -366,5 +384,19 @@ img {
 
   h3 {
     font-size: 1.1rem;
+  }
+
+  header {
+    padding: 15px 8px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin: 8px 0;
+  }
+
+  header p {
+    font-size: 0.95rem;
+    margin: 4px 0;
   }
 }
