@@ -17,8 +17,8 @@ header {
 
 .header-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -45,7 +45,7 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -213,18 +213,22 @@ footer p {
 /* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .header-bar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   nav a {
-    width: auto;
-    margin: 3px;
+    margin: 4px 6px;
     font-size: 13px;
     padding: 5px 8px;
   }
@@ -250,13 +254,23 @@ footer p {
 
 /* Phones (≤ 480px) */
 @media (max-width: 480px) {
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .header-left .school-name {
+    margin-left: 0;
     font-size: 16px;
   }
 
   .logo {
     width: 40px;
     height: 40px;
+  }
+
+  nav {
+    justify-content: center;
   }
 
   nav a {
