@@ -13,7 +13,12 @@
       <img src="https://raw.githubusercontent.com/geogonschool/geogon-school/main/mylogo.png" alt="Geogon School Logo" class="logo" />
       <h2 class="school-name">Geogon School</h2>
     </div>
-    <nav class="nav-links">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="subjects.html">Subjects & Packages</a>
@@ -22,8 +27,8 @@
       <a href="tutoring.html">Tutoring</a>
       <a href="gallery.html">Gallery</a>
       <a href="payment.html">Payment Info</a>
-  <a href="contact.html" class="active">Contact</a>
-</nav>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -55,8 +60,17 @@
       <img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="TikTok" class="social-icon">
     </a>
     <a href="https://www.youtube.com/@yourchannel" target="_blank">
-      <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" class="social-icon">
+      <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="YouTube" class="social-icon">
     </a>
   </div>
   <p>&copy; 2025 Geogon School Online Learning. All rights reserved.</p>
 </footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+  }
+</script>
+</body>
+</html>
