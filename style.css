@@ -69,7 +69,7 @@ nav a.active {
   color: #2d6a4f;
 }
 
-/* 💚 Colorful "hero" section for About page (or any welcome banner) */
+/* 💚 Colorful section for About page */
 .colorful-section {
   background: linear-gradient(135deg, #2d6a4f, #40916c);
   color: white;
@@ -89,7 +89,26 @@ nav a.active {
   margin: 0 auto;
 }
 
-/* Regular content section (white background) */
+/* 🤍 White hero sections (Home, Topics, Tutoring) */
+.hero-section-white {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e0f7fa;
+}
+
+.hero-section-white h1,
+.hero-section-white p {
+  color: #2d6a4f;
+  margin: 0;
+}
+
+.hero-section-white p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Main white content sections */
 section {
   background-color: white;
   padding: 40px 20px;
