@@ -74,10 +74,12 @@
 </footer>
 
 <script>
-  function toggleMenu() {
-    const nav = document.querySelector('nav');
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
     nav.classList.toggle('show');
-  }
+  });
 </script>
 </body>
 </html>
