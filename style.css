@@ -12,15 +12,13 @@ header {
   z-index: 1000;
   background: linear-gradient(135deg, #2d6a4f, #40916c);
   color: white;
-  text-align: center;
-  padding: 30px 20px;
+  padding: 10px 15px;
 }
 
 .header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   flex-wrap: wrap;
 }
 
@@ -29,18 +27,19 @@ header {
   align-items: center;
 }
 
-.header-left .school-name {
-  margin-left: 12px;
-  font-size: 24px;
-  font-weight: bold;
-  color: white !important;
-}
-
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.header-left .school-name {
+  margin-left: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white !important;
+  white-space: nowrap;
 }
 
 nav {
@@ -52,20 +51,21 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 5px 8px;
+  padding: 6px 10px;
   font-weight: bold;
-  transition: color 0.3s;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  color: #ffeb3b;
+  background-color: #ffeb3b;
+  color: #2d6a4f;
 }
 
 nav a.active {
   background-color: #ffeb3b;
   color: #2d6a4f;
-  border-radius: 5px;
-  padding: 6px 12px;
 }
 
 section {
@@ -223,8 +223,8 @@ footer p {
 
   nav a {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    text-align: center;
+    margin: 5px 0;
   }
 
   .features-grid,
@@ -235,6 +235,15 @@ footer p {
   .packages-grid {
     grid-template-columns: 1fr;
   }
+
+  .header-left .school-name {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -243,12 +252,12 @@ footer p {
   }
 
   .header-left .school-name {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 }
 
