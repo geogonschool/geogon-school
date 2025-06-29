@@ -69,6 +69,27 @@ nav a.active {
   color: #2d6a4f;
 }
 
+/* 💚 Colorful "hero" section for About page (or any welcome banner) */
+.colorful-section {
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.colorful-section h1,
+.colorful-section h2,
+.colorful-section p {
+  color: white;
+}
+
+.colorful-section p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Regular content section (white background) */
 section {
   background-color: white;
   padding: 40px 20px;
