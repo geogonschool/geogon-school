@@ -323,9 +323,10 @@ img {
 
   nav a {
     width: 100%;
-    margin: 8px 0;
-    padding: 10px 0;
+    margin: 4px 0;   /* reduced from 8px */
+    padding: 6px 0;  /* reduced from 10px */
     text-align: center;
+    font-size: 0.95rem; /* optional: slightly smaller text */
   }
 
   .logo {
@@ -346,6 +347,12 @@ img {
 
   .school-name {
     font-size: 18px;
+  }
+
+  nav a {
+    margin: 2px 0;  /* reduced further on very small screens */
+    padding: 5px 0;
+    font-size: 0.9rem; /* slightly smaller text on mobile */
   }
 
   h1 { font-size: 1.5rem; }
