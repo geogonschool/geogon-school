@@ -13,6 +13,11 @@
         <img src="https://raw.githubusercontent.com/geogonschool/geogon-school/main/mylogo.png" alt="Geogon School Logo" class="logo" />
         <h2 class="school-name">Geogon School</h2>
       </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
@@ -70,9 +75,16 @@
       <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" class="social-icon"></a>
       <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" class="social-icon"></a>
       <a href="https://www.tiktok.com/@yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="TikTok" class="social-icon"></a>
-      <a href="https://www.youtube.com/@yourchannel" target="_blank"><img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" class="social-icon"></a>
+      <a href="https://www.youtube.com/@yourchannel" target="_blank"><img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="YouTube" class="social-icon"></a>
     </div>
     <p>&copy; 2025 Geogon School Online Learning. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
