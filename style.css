@@ -1,3 +1,4 @@
+/* 🌿 General Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #e0f7fa, #ffffff);
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* 🌟 Header */
 header {
   position: sticky;
   top: 0;
@@ -55,9 +57,9 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
-  transition: color 0.3s, background-color 0.3s;
   border-radius: 5px;
   padding: 6px 12px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 nav a:hover {
@@ -69,27 +71,7 @@ nav a.active {
   color: #2d6a4f;
 }
 
-/* 💚 Colorful section for About page */
-.colorful-section {
-  background: linear-gradient(135deg, #2d6a4f, #40916c);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.colorful-section h1,
-.colorful-section h2,
-.colorful-section p {
-  color: white;
-}
-
-.colorful-section p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* 🤍 White hero sections (Home, Topics, Tutoring) */
+/* 🍃 Hero Section (white background) */
 .hero-section-white {
   background-color: white;
   padding: 60px 20px;
@@ -108,7 +90,7 @@ nav a.active {
   font-size: 1.2em;
 }
 
-/* Main white content sections */
+/* 🟢 Main Section */
 section {
   background-color: white;
   padding: 40px 20px;
@@ -123,22 +105,15 @@ h1, h2, h3 {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
 
 p {
   line-height: 1.6;
 }
 
+/* 🌟 Grids for Cards */
 .features-grid,
 .subjects-grid,
 .platforms-grid,
@@ -169,7 +144,7 @@ p {
 .topic-card:hover,
 .package-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .topic-card {
@@ -180,6 +155,7 @@ p {
   color: #4CAF50;
 }
 
+/* ✅ Buttons */
 .btn-primary, .link-button {
   background: #198754;
   color: white;
@@ -218,6 +194,7 @@ p {
   margin: 40px 0;
 }
 
+/* ✍️ Booking form */
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -254,12 +231,12 @@ p {
   background-color: #157347;
 }
 
+/* 🌍 Footer */
 footer {
   background-color: #2d6a4f;
   color: white;
   text-align: center;
   padding: 25px 15px;
-  font-size: 1em;
 }
 
 footer p {
@@ -303,104 +280,7 @@ img {
   height: auto;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .header-bar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .features-grid,
-  .subjects-grid,
-  .platforms-grid,
-  .gallery-grid,
-  .topics-grid,
-  .packages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  header {
-    padding: 20px 10px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-  }
-
-  header p {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-
-  .school-name {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .school-name {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  header {
-    padding: 15px 8px;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-    margin: 8px 0;
-  }
-
-  header p {
-    font-size: 0.95rem;
-    margin: 4px 0;
-  }
-}
-/* Hamburger toggle button - hidden on large screens */
+/* 🍔 Hamburger Menu */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -415,8 +295,13 @@ img {
   transition: 0.4s;
 }
 
-/* Responsive for tablet and phone only */
+/* 💻 Responsive Styles */
 @media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
   nav {
     display: none;
     flex-direction: column;
@@ -433,10 +318,33 @@ img {
   }
 
   nav a {
+    width: 100%;
     margin: 8px 0;
     padding: 10px 0;
-    width: 100%;
     text-align: center;
   }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
 }
 
+@media (max-width: 480px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .school-name {
+    font-size: 18px;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+}
