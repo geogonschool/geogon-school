@@ -28,15 +28,15 @@ header {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .header-left .school-name {
-  margin-left: 12px;
-  font-size: 22px;
+  margin-left: 10px;
+  font-size: 20px;
   font-weight: bold;
   color: white !important;
   white-space: nowrap;
@@ -51,11 +51,12 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 5px 8px;
-  padding: 6px 10px;
+  margin: 4px 6px;
+  padding: 6px 8px;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -70,8 +71,8 @@ nav a.active {
 
 section {
   background-color: white;
-  padding: 40px 20px;
-  margin: 30px auto;
+  padding: 30px 15px;
+  margin: 20px auto;
   max-width: 1000px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -85,26 +86,26 @@ footer {
   background-color: #2d6a4f;
   color: white;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 1.1em;
+  padding: 25px 15px;
+  font-size: 1em;
 }
 
 footer p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .social-icons {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .social-icons a {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 4px;
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   transition: transform 0.3s ease;
 }
 
@@ -120,7 +121,7 @@ footer p {
 .packages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -130,8 +131,8 @@ footer p {
 .topic-card,
 .package-card {
   background: #f0f4f8;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 8px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -142,14 +143,14 @@ footer p {
 .topic-card:hover,
 .package-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .btn-primary,
 .btn-secondary,
 .link-button {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -179,25 +180,25 @@ footer p {
 }
 
 .booking-form label {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 4px;
   font-weight: bold;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
 
 .booking-form button {
   background-color: #0077b6;
   color: white;
-  padding: 14px;
+  padding: 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -209,7 +210,7 @@ footer p {
   background-color: #023e8a;
 }
 
-/* Make pages adaptable on tablets and phones */
+/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .header-bar {
     flex-direction: column;
@@ -217,14 +218,24 @@ footer p {
   }
 
   nav {
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   nav a {
-    width: 100%;
-    text-align: center;
-    margin: 5px 0;
+    width: auto;
+    margin: 3px;
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .header-left .school-name {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
   }
 
   .features-grid,
@@ -235,29 +246,22 @@ footer p {
   .packages-grid {
     grid-template-columns: 1fr;
   }
-
-  .header-left .school-name {
-    font-size: 20px;
-  }
-
-  .logo {
-    width: 55px;
-    height: 55px;
-  }
 }
 
+/* Phones (≤ 480px) */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
   .header-left .school-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 5px 6px;
   }
 }
 
