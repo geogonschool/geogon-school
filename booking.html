@@ -13,11 +13,11 @@
       <img src="https://raw.githubusercontent.com/geogonschool/geogon-school/main/mylogo.png" alt="Geogon School Logo" class="logo" />
       <h2 class="school-name">Geogon School</h2>
     </div>
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+   <div class="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -32,56 +32,94 @@
   </div>
 </header>
 
-<section class="booking-section">
-  <h2>📅 Book Your Session</h2>
-  <p>Secure your personalized one-on-one learning experience today. We look forward to guiding you to success!</p>
-  <form action="https://formspree.io/f/xjkrjpqj" method="POST" class="booking-form">
-    <label for="parentName">👤 Parent/Student Name:</label>
-    <input type="text" id="parentName" name="parentName" required placeholder="Enter your full name">
+  <section class="booking-section">
+    <h2>📅 Book Your Session</h2>
+    <p>Secure your personalized one-on-one learning experience today. We look forward to guiding you to success!</p>
+    <form action="https://formspree.io/f/xjkrjpqj" method="POST" class="booking-form">
+      <label for="parentName">👤 Parent/Student Name:</label>
+      <input type="text" id="parentName" name="parentName" required placeholder="Enter your full name">
 
-    <label for="email">📧 Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+      <label for="email">📧 Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email address">
 
-    <label for="subject">📚 Subject:</label>
-    <select id="subject" name="subject" required>
-      <option value="">Select a subject</option>
-      <option value="Mathematics">Mathematics</option>
-      <option value="Computer Studies">Computer Studies</option>
-      <option value="Computer Science">Computer Science</option>
-      <option value="ICT">ICT</option>
-    </select>
+      <label for="subject">📚 Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Computer Studies">Computer Studies</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="ICT">ICT</option>
+      </select>
 
-    <label for="topic">📄 Topic:</label>
-    <select id="topic" name="topic" required>
-      <option value="">Select a topic</option>
-    </select>
+      <label for="topic">📄 Topic:</label>
+      <select id="topic" name="topic" required>
+        <option value="">Select a topic</option>
+        <!-- Topics -->
+        <option value="Algebra">Algebra</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Trigonometry">Trigonometry</option>
+        <option value="Statistics & Probability">Statistics & Probability</option>
+        <option value="Quadratic Equations">Quadratic Equations</option>
+        <option value="Vectors">Vectors</option>
+        <option value="Mensuration">Mensuration (Area & Volume)</option>
+        <option value="Coordinate Geometry">Coordinate Geometry</option>
+        <option value="Surds & Logarithms">Surds & Logarithms</option>
+        <option value="Sequences and Series">Sequences and Series</option>
+        <option value="Computer Basics & Applications">Computer Basics & Applications</option>
+        <option value="Word Processing & Spreadsheets">Word Processing & Spreadsheets</option>
+        <option value="Databases">Databases</option>
+        <option value="Internet & E-mail">Internet & E-mail</option>
+        <option value="Programming Basics">Programming Basics</option>
+        <option value="Computer Networks">Computer Networks</option>
+        <option value="Data Security & Ethics">Data Security & Ethics</option>
+        <option value="System Development Life Cycle">System Development Life Cycle</option>
+        <option value="Number and Algebra">Number and Algebra (IGCSE)</option>
+        <option value="Geometry and Measure">Geometry and Measure (IGCSE)</option>
+        <option value="Probability">Probability (IGCSE)</option>
+        <option value="Statistics">Statistics (IGCSE)</option>
+        <option value="Graphs and Functions">Graphs and Functions (IGCSE)</option>
+        <option value="Mensuration (IGCSE)">Mensuration (IGCSE)</option>
+        <option value="Vectors and Transformations">Vectors and Transformations (IGCSE)</option>
+        <option value="Sequences & Series (IGCSE)">Sequences & Series (IGCSE)</option>
+        <option value="Differentiation and Integration">Differentiation and Integration</option>
+        <option value="Hardware and Software">Hardware and Software</option>
+        <option value="Number Systems & Data Representation">Number Systems & Data Representation</option>
+        <option value="Networks & Communication">Networks & Communication</option>
+        <option value="Internet and Web Technologies">Internet and Web Technologies</option>
+        <option value="Logic Gates & Boolean Algebra">Logic Gates & Boolean Algebra</option>
+        <option value="Programming (Python, pseudocode)">Programming (Python, pseudocode)</option>
+        <option value="Algorithms & Problem-Solving">Algorithms & Problem-Solving</option>
+        <option value="Data Security and Privacy">Data Security and Privacy</option>
+        <option value="Spreadsheets & Databases">Spreadsheets & Databases</option>
+        <option value="ICT Applications and Social Impacts">ICT Applications and Social Impacts</option>
+      </select>
 
-    <label for="otherTopic">📝 Other Topic (if not listed):</label>
-    <input type="text" id="otherTopic" name="otherTopic" placeholder="Type your topic if not listed">
+      <label for="otherTopic">📝 Other Topic (if not listed):</label>
+      <input type="text" id="otherTopic" name="otherTopic" placeholder="Type your topic if not listed">
 
-    <label for="hours">⏰ Number of Hours:</label>
-    <select id="hours" name="hours" required>
-      <option value="">Select package</option>
-      <option value="1">1 hour (Ksh 1,000)</option>
-      <option value="2">2 hours (Ksh 1,800)</option>
-      <option value="3">3 hours (Ksh 2,800)</option>
-      <option value="4">4 hours (Ksh 3,700)</option>
-      <option value="5">5 hours (Ksh 4,800)</option>
-    </select>
+      <label for="hours">⏰ Number of Hours:</label>
+      <select id="hours" name="hours" required>
+        <option value="">Select package</option>
+        <option value="1">1 hour (Ksh 1,000)</option>
+        <option value="2">2 hours (Ksh 1,800)</option>
+        <option value="3">3 hours (Ksh 2,800)</option>
+        <option value="4">4 hours (Ksh 3,700)</option>
+        <option value="5">5 hours (Ksh 4,800)</option>
+      </select>
 
-    <label for="message">💬 Additional Message:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Any specific details or questions?"></textarea>
+      <label for="message">💬 Additional Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Any specific details or questions?"></textarea>
 
-    <button type="submit" class="btn-primary">Submit Booking</button>
-  </form>
+      <button type="submit" class="btn-primary">Submit Booking</button>
+    </form>
 
-  <div class="whatsapp-booking">
-    <p>💬 Prefer quick booking? <strong>Book directly via WhatsApp!</strong></p>
-    <a href="https://wa.me/254746475611?text=Hello%20Geogon%20School!%20I%20would%20like%20to%20book%20a%20tutoring%20session." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
-  </div>
-</section>
+    <div class="whatsapp-booking">
+      <p>💬 Prefer quick booking? <strong>Book directly via WhatsApp!</strong></p>
+      <a href="https://wa.me/254746475611?text=Hello%20Geogon%20School!%20I%20would%20like%20to%20book%20a%20tutoring%20session." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
+    </div>
+  </section>
 
-<footer>
+ <footer>
   <p>Contact: geogonschool9@gmail.com | Phone: 0746475611</p>
   <div class="social-icons">
     <a href="https://wa.me/254746475611" target="_blank">
@@ -115,53 +153,6 @@
 
   toggle.addEventListener('click', () => {
     nav.classList.toggle('show');
-  });
-
-  const subjectSelect = document.getElementById("subject");
-  const topicSelect = document.getElementById("topic");
-
-  const topicsBySubject = {
-    "Mathematics": [
-      "Algebra", "Geometry", "Trigonometry", "Statistics & Probability", 
-      "Quadratic Equations", "Vectors", "Mensuration (Area & Volume)", 
-      "Coordinate Geometry", "Surds & Logarithms", "Sequences and Series",
-      "Differentiation and Integration", "Probability (IGCSE)", 
-      "Number and Algebra (IGCSE)", "Geometry and Measure (IGCSE)", 
-      "Statistics (IGCSE)", "Graphs and Functions (IGCSE)", 
-      "Mensuration (IGCSE)", "Vectors and Transformations (IGCSE)", 
-      "Sequences & Series (IGCSE)"
-    ],
-    "Computer Studies": [
-      "Computer Basics & Applications", "Word Processing & Spreadsheets", 
-      "Databases", "Internet & E-mail", "Programming Basics", 
-      "Computer Networks", "Data Security & Ethics", 
-      "System Development Life Cycle"
-    ],
-    "Computer Science": [
-      "Hardware and Software", "Number Systems & Data Representation", 
-      "Networks & Communication", "Internet and Web Technologies", 
-      "Logic Gates & Boolean Algebra", "Programming (Python, pseudocode)", 
-      "Algorithms & Problem-Solving", "Data Security and Privacy", 
-      "Spreadsheets & Databases"
-    ],
-    "ICT": [
-      "ICT Applications and Social Impacts", "Internet and Web Technologies", 
-      "Word Processing & Spreadsheets", "Databases", "Computer Networks", 
-      "Data Security and Privacy", "Programming Basics", 
-      "System Development Life Cycle"
-    ]
-  };
-
-  subjectSelect.addEventListener("change", function() {
-    const selectedSubject = subjectSelect.value;
-    const topics = topicsBySubject[selectedSubject] || [];
-    topicSelect.innerHTML = '<option value="">Select a topic</option>';
-    topics.forEach(function(topic) {
-      const option = document.createElement("option");
-      option.value = topic;
-      option.textContent = topic;
-      topicSelect.appendChild(option);
-    });
   });
 </script>
 </body>
