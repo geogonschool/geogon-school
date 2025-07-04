@@ -5,149 +5,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking - Geogon School</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    select option {
-      text-align: left;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <div class="header-bar">
-      <div class="header-left">
-        <img src="https://raw.githubusercontent.com/geogonschool/geogon-school/main/mylogo.png" alt="Geogon School Logo" class="logo" />
-        <h2 class="school-name">Geogon School</h2>
-      </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="subjects.html">Subjects & Packages</a>
-        <a href="topics.html">Topics</a>
-        <a href="booking.html" class="active">Booking</a>
-        <a href="tutoring.html">Tutoring</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="payment.html">Payment Info</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <div class="header-bar">
+    <div class="header-left">
+      <img src="https://raw.githubusercontent.com/geogonschool/geogon-school/main/mylogo.png" alt="Geogon School Logo" class="logo" />
+      <h2 class="school-name">Geogon School</h2>
     </div>
-  </header>
-
-  <section class="booking-section">
-    <h2>📅 Book Your Session</h2>
-    <p>Secure your personalized one-on-one learning experience today. We look forward to guiding you to success!</p>
-    <form action="https://formspree.io/f/xjkrjpqj" method="POST" class="booking-form">
-      <label for="parentName">👤 Parent/Student Name:</label>
-      <input type="text" id="parentName" name="parentName" required placeholder="Enter your full name">
-
-      <label for="email">📧 Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Enter your email address">
-
-      <label for="subject">📚 Subject:</label>
-      <select id="subject" name="subject" required>
-        <option value="">Select a subject</option>
-        <option value="MathematicsG8_11">Mathematics (Grade 8–11)</option>
-        <option value="CompStudiesG8_11">Computer Studies (Grade 8–11)</option>
-        <option value="MathematicsY7_12">Mathematics (Year 7–12)</option>
-        <option value="CS_ICT_Y7_12">Computer Science & ICT (Year 7–12)</option>
-      </select>
-
-      <label for="topic">📄 Topic:</label>
-      <select id="topic" name="topic" required>
-        <option value="">Select a topic</option>
-      </select>
-
-      <label for="otherTopic">📝 Other Topic (if not listed):</label>
-      <input type="text" id="otherTopic" name="otherTopic" placeholder="Type your topic if not listed">
-
-      <label for="hours">⏰ Number of Hours:</label>
-      <select id="hours" name="hours" required>
-        <option value="">Select package</option>
-        <option value="1">1 hour (Ksh 1,000)</option>
-        <option value="2">2 hours (Ksh 1,800)</option>
-        <option value="3">3 hours (Ksh 2,800)</option>
-        <option value="4">4 hours (Ksh 3,700)</option>
-        <option value="5">5 hours (Ksh 4,800)</option>
-      </select>
-
-      <label for="message">💬 Additional Message:</label>
-      <textarea id="message" name="message" rows="4" placeholder="Any specific details or questions?"></textarea>
-
-      <button type="submit" class="btn-primary">Submit Booking</button>
-    </form>
-
-    <div class="whatsapp-booking">
-      <p>💬 Prefer quick booking? <strong>Book directly via WhatsApp!</strong></p>
-      <a href="https://wa.me/254746475611?text=Hello%20Geogon%20School!%20I%20would%20like%20to%20book%20a%20tutoring%20session." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="subjects.html">Subjects & Packages</a>
+      <a href="topics.html">Topics</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="tutoring.html">Tutoring</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="payment.html">Payment Info</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <footer>
-    <p>Contact: geogonschool9@gmail.com | Phone: 0746475611</p>
-    <div class="social-icons">
-      <a href="https://wa.me/254746475611" target="_blank"><img src="https://shorturl.at/9vzYY" alt="WhatsApp" class="social-icon"></a>
-      <a href="https://www.facebook.com/yourpage" target="_blank"><img src="https://shorturl.at/1itrt" alt="Facebook" class="social-icon"></a>
-      <a href="https://twitter.com/yourprofile" target="_blank"><img src="https://shorturl.at/hzRQj" alt="X (Twitter)" class="social-icon"></a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" class="social-icon"></a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" class="social-icon"></a>
-      <a href="https://www.tiktok.com/@yourprofile" target="_blank"><img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="TikTok" class="social-icon"></a>
-      <a href="https://www.youtube.com/@yourchannel" target="_blank"><img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="YouTube" class="social-icon"></a>
-    </div>
-    <p>&copy; 2025 Geogon School Online Learning. All rights reserved.</p>
-  </footer>
+<section class="booking-section">
+  <h2>📅 Book Your Session</h2>
+  <p>Secure your personalized one-on-one learning experience today. We look forward to guiding you to success!</p>
+  <form action="https://formspree.io/f/xjkrjpqj" method="POST" class="booking-form">
+    <label for="parentName">👤 Parent/Student Name:</label>
+    <input type="text" id="parentName" name="parentName" required placeholder="Enter your full name">
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    <label for="email">📧 Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address">
 
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
+    <label for="subject">📚 Subject:</label>
+    <select id="subject" name="subject" required>
+      <option value="">Select a subject</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Computer Studies">Computer Studies</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="ICT">ICT</option>
+    </select>
+
+    <label for="topic">📄 Topic:</label>
+    <select id="topic" name="topic" required>
+      <option value="">Select a topic</option>
+    </select>
+
+    <label for="otherTopic">📝 Other Topic (if not listed):</label>
+    <input type="text" id="otherTopic" name="otherTopic" placeholder="Type your topic if not listed">
+
+    <label for="hours">⏰ Number of Hours:</label>
+    <select id="hours" name="hours" required>
+      <option value="">Select package</option>
+      <option value="1">1 hour (Ksh 1,000)</option>
+      <option value="2">2 hours (Ksh 1,800)</option>
+      <option value="3">3 hours (Ksh 2,800)</option>
+      <option value="4">4 hours (Ksh 3,700)</option>
+      <option value="5">5 hours (Ksh 4,800)</option>
+    </select>
+
+    <label for="message">💬 Additional Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Any specific details or questions?"></textarea>
+
+    <button type="submit" class="btn-primary">Submit Booking</button>
+  </form>
+
+  <div class="whatsapp-booking">
+    <p>💬 Prefer quick booking? <strong>Book directly via WhatsApp!</strong></p>
+    <a href="https://wa.me/254746475611?text=Hello%20Geogon%20School!%20I%20would%20like%20to%20book%20a%20tutoring%20session." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>Contact: geogonschool9@gmail.com | Phone: 0746475611</p>
+  <div class="social-icons">
+    <a href="https://wa.me/254746475611" target="_blank">
+      <img src="https://shorturl.at/9vzYY" alt="WhatsApp" class="social-icon">
+    </a>
+    <a href="https://www.facebook.com/yourpage" target="_blank">
+      <img src="https://shorturl.at/1itrt" alt="Facebook" class="social-icon">
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank">
+      <img src="https://shorturl.at/hzRQj" alt="X (Twitter)" class="social-icon">
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" class="social-icon">
+    </a>
+    <a href="https://www.tiktok.com/@yourprofile" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="TikTok" class="social-icon">
+    </a>
+    <a href="https://www.youtube.com/@yourchannel" target="_blank">
+      <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="YouTube" class="social-icon">
+    </a>
+  </div>
+  <p>&copy; 2025 Geogon School Online Learning. All rights reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+  const subjectSelect = document.getElementById("subject");
+  const topicSelect = document.getElementById("topic");
+
+  const topicsBySubject = {
+    "Mathematics": [
+      "Algebra", "Geometry", "Trigonometry", "Statistics & Probability", 
+      "Quadratic Equations", "Vectors", "Mensuration (Area & Volume)", 
+      "Coordinate Geometry", "Surds & Logarithms", "Sequences and Series",
+      "Differentiation and Integration", "Probability (IGCSE)", 
+      "Number and Algebra (IGCSE)", "Geometry and Measure (IGCSE)", 
+      "Statistics (IGCSE)", "Graphs and Functions (IGCSE)", 
+      "Mensuration (IGCSE)", "Vectors and Transformations (IGCSE)", 
+      "Sequences & Series (IGCSE)"
+    ],
+    "Computer Studies": [
+      "Computer Basics & Applications", "Word Processing & Spreadsheets", 
+      "Databases", "Internet & E-mail", "Programming Basics", 
+      "Computer Networks", "Data Security & Ethics", 
+      "System Development Life Cycle"
+    ],
+    "Computer Science": [
+      "Hardware and Software", "Number Systems & Data Representation", 
+      "Networks & Communication", "Internet and Web Technologies", 
+      "Logic Gates & Boolean Algebra", "Programming (Python, pseudocode)", 
+      "Algorithms & Problem-Solving", "Data Security and Privacy", 
+      "Spreadsheets & Databases"
+    ],
+    "ICT": [
+      "ICT Applications and Social Impacts", "Internet and Web Technologies", 
+      "Word Processing & Spreadsheets", "Databases", "Computer Networks", 
+      "Data Security and Privacy", "Programming Basics", 
+      "System Development Life Cycle"
+    ]
+  };
+
+  subjectSelect.addEventListener("change", function() {
+    const selectedSubject = subjectSelect.value;
+    const topics = topicsBySubject[selectedSubject] || [];
+    topicSelect.innerHTML = '<option value="">Select a topic</option>';
+    topics.forEach(function(topic) {
+      const option = document.createElement("option");
+      option.value = topic;
+      option.textContent = topic;
+      topicSelect.appendChild(option);
     });
-
-    const subjectSelect = document.getElementById("subject");
-    const topicSelect = document.getElementById("topic");
-
-    const topicsBySubject = {
-      "MathematicsG8_11": [
-        "Algebra", "Geometry", "Trigonometry", "Statistics & Probability", 
-        "Quadratic Equations", "Vectors", "Mensuration (Area & Volume)", 
-        "Coordinate Geometry", "Surds & Logarithms", "Sequences and Series"
-      ],
-      "CompStudiesG8_11": [
-        "Computer Basics & Applications", "Word Processing & Spreadsheets", 
-        "Databases", "Internet & E-mail", "Programming Basics", 
-        "Computer Networks", "Data Security & Ethics", "System Development Life Cycle"
-      ],
-      "MathematicsY7_12": [
-        "Number and Algebra", "Geometry and Measures", "Statistics", 
-        "Probability", "Graphs and Functions", "Mensuration", 
-        "Vectors and Transformations", "Sequences & Series", 
-        "Differentiation and Integration"
-      ],
-      "CS_ICT_Y7_12": [
-        "Hardware and Software", "Number Systems & Data Representation", 
-        "Networks & Communication", "Internet and Web Technologies", 
-        "Logic Gates & Boolean Algebra", "Programming (Python, pseudocode)", 
-        "Algorithms & Problem-Solving", "Data Security and Privacy", 
-        "Spreadsheets & Databases", "ICT Applications and Social Impacts"
-      ]
-    };
-
-    subjectSelect.addEventListener("change", function() {
-      const selectedSubject = subjectSelect.value;
-      const topics = topicsBySubject[selectedSubject] || [];
-      topicSelect.innerHTML = '<option value="">Select a topic</option>';
-      topics.forEach(function(topic) {
-        const option = document.createElement("option");
-        option.value = topic;
-        option.textContent = topic;
-        topicSelect.appendChild(option);
-      });
-    });
-  </script>
+  });
+</script>
 </body>
 </html>
